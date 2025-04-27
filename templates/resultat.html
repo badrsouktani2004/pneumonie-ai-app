@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Résultat de l’analyse</h1>
+
+    <div class="image-container">
+        <img src="{{ image_path }}" alt="Image téléversée">
+    </div>
+
+    <div class="result-container">
+        <p><strong>Diagnostic :</strong> {{ resultat }}</p>
+        <p><strong>Probabilité :</strong> {{ probabilite }}%</p>
+    </div>
+
+    <a href="/">⬅ Retour</a>
+</body>
+</html>
+
