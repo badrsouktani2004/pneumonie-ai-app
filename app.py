@@ -56,7 +56,7 @@ def upload():
 
 # Pour lancer l'application Flask localement (on exécute ça uniquement si ce fichier est exécuté directement)
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=3000)
 
 
 
